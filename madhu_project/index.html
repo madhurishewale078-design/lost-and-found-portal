@@ -1,0 +1,2778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect Pro | Enterprise Lost & Found Management System</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NEXT-LEVEL PREMIUM LOGIN PAGE -->
+    <div id="loginPage" class="login-page">
+        <!-- Animated Background Elements -->
+        <div class="login-bg">
+            <div class="bg-grid"></div>
+            <div class="bg-blob blob-1"></div>
+            <div class="bg-blob blob-2"></div>
+            <div class="bg-blob blob-3"></div>
+            <div class="bg-glow"></div>
+            <div class="bg-particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </div>
+
+        <div class="login-container">
+
+
+
+
+
+            <!-- Main Login Card -->
+            <div class="login-card">
+                <!-- Decorative Elements -->
+                <div class="card-shine"></div>
+                <div class="card-corner corner-tl"></div>
+                <div class="card-corner corner-tr"></div>
+                <div class="card-corner corner-bl"></div>
+                <div class="card-corner corner-br"></div>
+                <div class="card-glow"></div>
+
+                <div class="login-header">
+                    <!-- Animated Logo Container -->
+                    <div class="logo-wrapper">
+                        <div class="logo-ring"></div>
+                        <div class="logo-ring-inner"></div>
+                        <div class="logo-ring-outer"></div>
+                        <div class="login-logo">
+                            <img src="https://thumbs.dreamstime.com/b/vector-graphic-initials-letter-cm-logo-design-template-vector-graphic-emblem-hexagon-initials-letter-cm-logo-design-template-204623045.jpg"
+                                alt="CampusConnect Pro">
+                        </div>
+                    </div>
+
+                    <!-- Brand Section -->
+                    <div class="brand-wrapper">
+                        <h1 class="login-title">
+                            <span class="title-gradient">Campus</span>
+                            <span class="title-highlight">Lost & Found</span>
+                            <span class="title-pro">Pro</span>
+                        </h1>
+                        <div class="title-underline">
+                            <span class="underline-glow"></span>
+                        </div>
+                        <p class="login-subtitle">
+                            <span class="subtitle-text">Enterprise Lost & Found Management System</span>
+                            <span class="subtitle-badge">CM</span>
+                        </p>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-badges">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>ISO 27001</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-lock"></i>
+                            <span>256-bit SSL</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>GDPR Ready</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Message with Animation -->
+                <div class="login-error" id="loginError">
+                    <div class="error-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error-content">
+                        <span class="error-title">Authentication Failed</span>
+                        <span class="error-message">Invalid User ID or Date of Birth</span>
+                    </div>
+                    <button type="button" class="error-close" onclick="this.parentElement.classList.remove('show')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="login-form">
+                    <!-- User ID Field -->
+                    <div class="input-wrapper">
+                        <div class="input-group">
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="input-field-wrapper">
+                                <label for="userId" class="input-label">User ID</label>
+                                <input type="text" id="userId" class="form-input" placeholder="Enter your user ID"
+                                    value="std1" required>
+                                <div class="input-highlight"></div>
+                            </div>
+                            <div class="input-status">
+                                <i class="fas fa-check-circle valid-icon"></i>
+                                <i class="fas fa-exclamation-circle invalid-icon"></i>
+                            </div>
+                        </div>
+                        <div class="input-hint">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Use your campus credentials</span>
+                        </div>
+                    </div>
+
+                    <!-- Date of Birth Field -->
+                    <div class="input-wrapper">
+                        <div class="input-group">
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="input-field-wrapper">
+                                <label for="dob" class="input-label">Date of Birth</label>
+                                <input type="date" id="dob" class="form-input" value="2002-05-15" max="2010-12-31"
+                                    required>
+                                <div class="input-highlight"></div>
+                            </div>
+                            <div class="input-status">
+                                <i class="fas fa-check-circle valid-icon"></i>
+                            </div>
+                        </div>
+                        <div class="input-hint">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Format: YYYY-MM-DD</span>
+                        </div>
+                    </div>
+
+                    <!-- Security Features Display -->
+                    <div class="security-badge">
+                        <div class="security-item">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Biometric Ready</span>
+                        </div>
+                        <div class="security-divider"></div>
+                        <div class="security-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>2FA Available</span>
+                        </div>
+                        <div class="security-divider"></div>
+                        <div class="security-item">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Zero Trust</span>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="login-btn" id="loginBtn">
+                        <span class="btn-text">Secure Sign In</span>
+                        <span class="btn-loader">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </span>
+                        <span class="btn-success">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        <span class="btn-glow"></span>
+                    </button>
+
+                    <!-- Quick Actions -->
+                    <div class="quick-actions">
+                        <button type="button" class="quick-action-btn">
+                            <i class="fas fa-key"></i>
+                            <span>Forgot ID?</span>
+                        </button>
+                        <span class="action-divider"></span>
+                        <button type="button" class="quick-action-btn">
+                            <i class="fas fa-headset"></i>
+                            <span>Need Help?</span>
+                        </button>
+                        <span class="action-divider"></span>
+                        <button type="button" class="quick-action-btn">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Register</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Demo Credentials Card -->
+                <div class="demo-credentials" id="demoCredentials">
+                    <div class="demo-header" onclick="toggleDemo()">
+                        <i class="fas fa-robot"></i>
+                        <span>Demo Access</span>
+                        <i class="fas fa-chevron-down demo-toggle"></i>
+                    </div>
+                    <div class="demo-content" id="demoContent">
+                        <div class="demo-grid">
+                            <div class="demo-item" onclick="fillDemo('userId', 'std1')">
+                                <span class="demo-label">User ID</span>
+                                <span class="demo-value">std1</span>
+                                <button class="demo-copy" onclick="copyToClipboard('std1'); event.stopPropagation();">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="demo-item" onclick="fillDemo('dob', '2002-05-15')">
+                                <span class="demo-label">Password/DOB</span>
+                                <span class="demo-value">2002-05-15</span>
+                                <button class="demo-copy"
+                                    onclick="copyToClipboard('2002-05-15'); event.stopPropagation();">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-note">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Click credentials to auto-fill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Footer -->
+                <div class="login-footer">
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Terms</a>
+                        <span class="link-dot">•</span>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <span class="link-dot">•</span>
+                        <a href="#" class="footer-link">Cookies</a>
+                        <span class="link-dot">•</span>
+                        <a href="#" class="footer-link">Security</a>
+                    </div>
+                    <div class="footer-copyright">
+                        <i class="far fa-copyright"></i>
+                        <span>2025 CampusConnect Pro. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APPLICATION -->
+    <div id="mainApp" style="display: none;">
+        <div class="app-container">
+            <!-- PREMIUM SIDEBAR -->
+            <aside class="sidebar" id="sidebar">
+                <!-- Animated Background -->
+                <div class="sidebar-bg">
+                    <div class="sidebar-grid"></div>
+                    <div class="sidebar-glow"></div>
+                    <div class="sidebar-particles">
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                        <span class="particle"></span>
+                    </div>
+                </div>
+
+                <!-- Sidebar Header -->
+                <div class="sidebar-header">
+                    <a href="#" class="logo" onclick="app.showSection('dashboard'); return false;">
+                        <div class="logo-wrapper">
+                           <div class="logo-icon">
+    <img src="https://thumbs.dreamstime.com/b/vector-graphic-initials-letter-cm-logo-design-template-vector-graphic-emblem-hexagon-initials-letter-cm-logo-design-template-204623045.jpg" alt="CM Logo" class="logo-img">
+</div>
+                            <div class="logo-ring"></div>
+                            <div class="logo-ring-inner"></div>
+                        </div>
+                        <div class="logo-text">
+                            <h1 class="logo-title">
+                                <span class="title-gradient">Campus</span>
+                                <span class="title-highlight">Connect</span>
+                            </h1>
+                            <div class="logo-badge">
+                                <span class="badge-text">Enterprise</span>
+                                <span class="badge-version">v3.0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <button class="sidebar-close" id="sidebarClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- User Profile -->
+                <div class="sidebar-profile">
+                    <div class="profile-avatar-wrapper">
+                        <div class="profile-avatar">
+                            <img src="https://img.freepik.com/free-photo/portrait-delighted-hipster-male-student-with-crisp-hair_176532-8157.jpg?semt=ais_user_personalization&w=740&q=80"
+                                alt="User">
+                        </div>
+                        <span class="avatar-status online"></span>
+                        <span class="avatar-ring"></span>
+                    </div>
+                    <div class="profile-info">
+                        <h4 class="profile-name" id="sidebarUserName">madhuri shewale</h4>
+                        <p class="profile-role" id="sidebarUserRole">
+                            <i class="fas fa-graduation-cap"></i>
+                            Student
+                        </p>
+                    </div>
+                    <button class="profile-switch" onclick="app.showSection('settings')">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="sidebar-nav">
+                    <ul class="nav-menu">
+                        <!-- Main Group -->
+                        <li class="nav-group">
+                            <span class="nav-group-label">
+                                <i class="fas fa-circle"></i>
+                                Main
+                            </span>
+                            <ul class="nav-group-items">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" data-section="dashboard">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <span class="nav-tooltip">Dashboard</span>
+                                        </div>
+                                        <span class="nav-label">Dashboard</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="report-lost">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <span class="nav-tooltip">Report Lost</span>
+                                        </div>
+                                        <span class="nav-label">Report Lost Item</span>
+                                        <span class="nav-badge badge-warning">!</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="report-found">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-hand-holding-heart"></i>
+                                            <span class="nav-tooltip">Report Found</span>
+                                        </div>
+                                        <span class="nav-label">Report Found Item</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Discovery Group -->
+                        <li class="nav-group">
+                            <span class="nav-group-label">
+                                <i class="fas fa-circle"></i>
+                                Discovery
+                            </span>
+                            <ul class="nav-group-items">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="browse">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-search"></i>
+                                            <span class="nav-tooltip">Browse</span>
+                                        </div>
+                                        <span class="nav-label">Browse Items</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="matches">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-handshake"></i>
+                                            <span class="nav-tooltip">Matches</span>
+                                        </div>
+                                        <span class="nav-label">Matches</span>
+                                        <span class="nav-badge badge-matched" id="matchCountSidebar">0</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="history">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-history"></i>
+                                            <span class="nav-tooltip">History</span>
+                                        </div>
+                                        <span class="nav-label">History</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Insights Group -->
+                        <li class="nav-group">
+                            <span class="nav-group-label">
+                                <i class="fas fa-circle"></i>
+                                Insights
+                            </span>
+                            <ul class="nav-group-items">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="analytics">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span class="nav-tooltip">Analytics</span>
+                                        </div>
+                                        <span class="nav-label">Analytics</span>
+                                        <span class="nav-badge badge-success">Live</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- Settings Group -->
+                        <li class="nav-group">
+                            <span class="nav-group-label">
+                                <i class="fas fa-circle"></i>
+                                System
+                            </span>
+                            <ul class="nav-group-items">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="settings">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-cog"></i>
+                                            <span class="nav-tooltip">Settings</span>
+                                        </div>
+                                        <span class="nav-label">Settings</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-section="help">
+                                        <div class="nav-icon-wrapper">
+                                            <i class="fas fa-question-circle"></i>
+                                            <span class="nav-tooltip">Help</span>
+                                        </div>
+                                        <span class="nav-label">Help</span>
+                                        <div class="nav-indicator"></div>
+                                        <span class="nav-ripple"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Sidebar Footer -->
+                <div class="sidebar-footer">
+                    <!-- Storage Indicator -->
+                    <div class="storage-indicator">
+                        <div class="storage-info">
+                            <i class="fas fa-database"></i>
+                            <span>Storage</span>
+                            <span class="storage-percent">65%</span>
+                        </div>
+                        <div class="storage-bar">
+                            <div class="storage-progress" style="width: 65%">
+                                <div class="storage-glow"></div>
+                            </div>
+                        </div>
+                        <div class="storage-details">
+                            <span>1.2 GB / 2 GB</span>
+                            <span>Free: 0.8 GB</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+                <!-- PREMIUM TOP BAR -->
+                <div class="top-bar">
+                    <div class="page-title-wrapper">
+                        <h1 class="page-title" id="currentPageTitle">Dashboard</h1>
+                        <div class="title-decoration">
+                            <span class="title-dot"></span>
+                            <span class="title-line"></span>
+                            <span class="title-badge" id="liveIndicator">
+                                <span class="pulse-dot"></span>
+                                Live
+                            </span>
+                        </div>
+                        <div class="page-actions">
+                            <button class="page-action" onclick="app.refreshDashboard()">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                            <button class="page-action" onclick="app.downloadReport()">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="top-bar-actions">
+                        <!-- Quick Search -->
+                        <div class="quick-search">
+                            <button class="search-toggle" id="quickSearchToggle">
+                                <i class="fas fa-search"></i>
+                                <span class="search-shortcut">⌘K</span>
+                            </button>
+                            <div class="search-dropdown" id="quickSearchDropdown">
+                                <div class="search-header">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" placeholder="Search items, users, locations..."
+                                        id="quickSearchInput">
+                                    <span class="search-hint">Press Enter</span>
+                                </div>
+                                <div class="search-results" id="quickSearchResults">
+                                    <div class="search-category">
+                                        <span class="category-label">Recent</span>
+                                        <div class="category-items">
+                                            <div class="search-item">
+                                                <i class="fas fa-laptop"></i>
+                                                <div class="item-info">
+                                                    <span class="item-name">MacBook Pro</span>
+                                                    <span class="item-meta">Lost • 2 hours ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="search-item">
+                                                <i class="fas fa-id-card"></i>
+                                                <div class="item-info">
+                                                    <span class="item-name">Student ID Card</span>
+                                                    <span class="item-meta">Found • 5 hours ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notification Center -->
+                        <div class="notification-center">
+                            <button class="notification-toggle" id="notificationToggle">
+                                <i class="fas fa-bell"></i>
+                                <span class="notification-badge" id="liveNotificationCount">3</span>
+                                <span class="notification-pulse"></span>
+                            </button>
+                            <div class="notification-dropdown" id="notificationDropdown">
+                                <div class="notification-header">
+                                    <h3>Notifications</h3>
+                                    <button class="mark-all-read" id="markAllRead">
+                                        <i class="fas fa-check-double"></i>
+                                    </button>
+                                </div>
+                                <div class="notification-list" id="notificationList">
+                                    <div class="notification-item unread">
+                                        <div class="item-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <p class="item-title">New match found!</p>
+                                            <p class="item-desc">Your lost item matches a found report</p>
+                                            <span class="item-time">5 min ago</span>
+                                        </div>
+                                        <span class="item-badge">New</span>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="item-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <p class="item-title">Item claimed</p>
+                                            <p class="item-desc">Your found item has been claimed</p>
+                                            <span class="item-time">2 hours ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-footer">
+                                    <a href="#" onclick="app.showSection('notifications')">View all notifications</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Theme Toggle Premium -->
+                        <div class="theme-toggle-premium">
+                            <button class="theme-toggle-btn active" id="lightThemeBtn">
+                                <i class="fas fa-sun"></i>
+                                <span class="btn-tooltip">Light mode</span>
+                            </button>
+                            <button class="theme-toggle-btn" id="darkThemeBtn">
+                                <i class="fas fa-moon"></i>
+                                <span class="btn-tooltip">Dark mode</span>
+                            </button>
+                            <div class="theme-indicator"></div>
+                        </div>
+
+                        <!-- User Menu Premium -->
+                        <div class="user-menu-premium">
+                            <button class="user-menu-btn" id="userMenuBtn">
+                                <div class="user-avatar-wrapper">
+                                    <div class="user-avatar" id="userAvatar">
+                                        <img src="https://ui-avatars.com/api/?name=madhuri+shewale&background=4f46e5&color=fff&size=128"
+                                            alt="User">
+                                    </div>
+                                    <span class="avatar-status online"></span>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name-wrapper">
+                                        <span class="user-name" id="userDisplayName">Madhuri shewale</span>
+                                        <i class="fas fa-crown user-badge" title="Premium User"></i>
+                                    </div>
+                                    <div class="user-role" id="userRole">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        Student
+                                    </div>
+                                </div>
+                                <div class="user-menu-indicator">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </button>
+
+                            <!-- User Dropdown -->
+                            <div class="user-dropdown" id="userDropdown">
+                                <div class="dropdown-header">
+                                    <div class="dropdown-user-info">
+                                        <div class="dropdown-avatar">
+                                            <img src="https://img.freepik.com/free-photo/portrait-delighted-hipster-male-student-with-crisp-hair_176532-8157.jpg?semt=ais_user_personalization&w=740&q=80"
+                                                alt="User">
+                                        </div>
+                                        <div class="dropdown-user-details">
+                                            <h4 id="dropdownUserName">madhuri shewale</h4>
+                                            <p id="dropdownUserEmail">madhu.shewale@campus.edu</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-stats">
+                                        <div class="stat">
+                                            <span class="stat-value" id="userItemsCount">12</span>
+                                            <span class="stat-label">Items</span>
+                                        </div>
+                                        <div class="stat-divider"></div>
+                                        <div class="stat">
+                                            <span class="stat-value" id="userMatchesCount">5</span>
+                                            <span class="stat-label">Matches</span>
+                                        </div>
+                                        <div class="stat-divider"></div>
+                                        <div class="stat">
+                                            <span class="stat-value" id="userDaysCount">30</span>
+                                            <span class="stat-label">Days</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="profileBtn">
+                                        <div class="item-icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <span class="item-title">My Profile</span>
+                                            <span class="item-subtitle">View and edit profile</span>
+                                        </div>
+                                        <span class="item-shortcut">⌘P</span>
+                                    </div>
+
+                                    <div class="dropdown-item" id="notificationsBtn">
+                                        <div class="item-icon">
+                                            <i class="fas fa-bell"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <span class="item-title">Notifications</span>
+                                            <span class="item-subtitle">Manage alerts</span>
+                                        </div>
+                                        <span class="item-badge" id="notificationBadge">3</span>
+                                    </div>
+
+                                    <div class="dropdown-item" id="settingsBtn">
+                                        <div class="item-icon">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <span class="item-title">Settings</span>
+                                            <span class="item-subtitle">Preferences & privacy</span>
+                                        </div>
+                                        <span class="item-shortcut">⌘,</span>
+                                    </div>
+
+                                    <div class="dropdown-item" id="helpBtn">
+                                        <div class="item-icon">
+                                            <i class="fas fa-question-circle"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <span class="item-title">Help Center</span>
+                                            <span class="item-subtitle">Guides & support</span>
+                                        </div>
+                                        <span class="item-shortcut">⌘H</span>
+                                    </div>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <div class="dropdown-item" id="logoutBtn">
+                                        <div class="item-icon">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </div>
+                                        <div class="item-content">
+                                            <span class="item-title">Logout</span>
+                                            <span class="item-subtitle">End current session</span>
+                                        </div>
+                                        <span class="item-shortcut">⌘Q</span>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-footer">
+                                    <div class="footer-status">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Secured connection</span>
+                                    </div>
+                                    <div class="footer-version">
+                                        <span>v3.0.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT SECTIONS -->
+                <div class="content-sections">
+                    <!-- DASHBOARD SECTION -->
+                    <section id="dashboard" class="content-section active">
+                        <!-- Stats Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="dashboardLostCount">24</div>
+                                    <div class="stat-label">Active Lost Reports</div>
+                                    <div class="stat-footer">
+                                        <span class="stat-change positive">
+                                            <i class="fas fa-arrow-up"></i> +12%
+                                        </span>
+                                        <span class="stat-period">vs last month</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                    </div>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="dashboardFoundCount">18</div>
+                                    <div class="stat-label">Unclaimed Found Items</div>
+                                    <div class="stat-footer">
+                                        <span class="stat-change positive">
+                                            <i class="fas fa-arrow-up"></i> +8%
+                                        </span>
+                                        <span class="stat-period">vs last month</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="dashboardMatchCount">7</div>
+                                    <div class="stat-label">Potential Matches</div>
+                                    <div class="stat-footer">
+                                        <span class="stat-change positive">
+                                            <i class="fas fa-arrow-up"></i> +15%
+                                        </span>
+                                        <span class="stat-period">vs last month</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="dashboardResolvedCount">156</div>
+                                    <div class="stat-label">Resolved Items</div>
+                                    <div class="stat-footer">
+                                        <span class="stat-change positive">
+                                            <i class="fas fa-arrow-up"></i> +23%
+                                        </span>
+                                        <span class="stat-period">total this year</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity Card -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-clock"></i>
+                                    Recent Activity
+                                </h3>
+                                <div class="filter-group">
+                                    <button class="filter-btn active" data-filter="all">All</button>
+                                    <button class="filter-btn" data-filter="lost">Lost</button>
+                                    <button class="filter-btn" data-filter="found">Found</button>
+                                    <button class="filter-btn" data-filter="matched">Matched</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-container">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Item</th>
+                                                <th>Location</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="activityList">
+                                            <tr>
+                                                <td><span class="badge badge-lost">Lost</span></td>
+                                                <td>MacBook Pro</td>
+                                                <td>Library - 2nd Floor</td>
+                                                <td>2025-02-20</td>
+                                                <td><span class="badge badge-pending">Pending</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge badge-found">Found</span></td>
+                                                <td>Student ID Card</td>
+                                                <td>Cafeteria</td>
+                                                <td>2025-02-19</td>
+                                                <td><span class="badge badge-matched">Matched</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge badge-matched">Matched</span></td>
+                                                <td>iPhone 13</td>
+                                                <td>Gym</td>
+                                                <td>2025-02-18</td>
+                                                <td><span class="badge badge-resolved">Resolved</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Charts Grid -->
+                        <div class="grid-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>
+                                        <i class="fas fa-chart-pie"></i>
+                                        Category Distribution
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="categoryChart" style="height: 300px;"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Location Hotspots
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="locationChart" style="height: 300px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- REPORT LOST SECTION -->
+                    <section id="report-lost" class="content-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    Report Lost Item
+                                </h3>
+                                <p class="text-muted">Fill in the details below to report a lost item</p>
+                            </div>
+                            <div class="card-body">
+                                <form id="lostItemForm" class="premium-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Item Name *</label>
+                                            <input type="text" class="form-control" id="lostItemName"
+                                                placeholder="e.g., Laptop, Wallet, ID Card" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Category *</label>
+                                            <select class="form-control" id="lostCategory" required>
+                                                <option value="">Select Category</option>
+                                                <option value="Electronics">Electronics</option>
+                                                <option value="ID Card">ID Card</option>
+                                                <option value="Wallet">Wallet</option>
+                                                <option value="Keys">Keys</option>
+                                                <option value="Books">Books</option>
+                                                <option value="Clothing">Clothing</option>
+                                                <option value="Accessories">Accessories</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Last Seen Location *</label>
+                                            <input type="text" class="form-control" id="lostLocation"
+                                                placeholder="e.g., Library, Cafeteria" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Date Lost *</label>
+                                            <input type="date" class="form-control" id="lostDate" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Description *</label>
+                                        <textarea class="form-control" id="lostDescription" rows="4"
+                                            placeholder="Describe the item in detail (color, brand, distinguishing features)"
+                                            required></textarea>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Contact Email *</label>
+                                            <input type="email" class="form-control" id="lostEmail"
+                                                placeholder="your.email@campus.edu" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="lostPhone"
+                                                placeholder="+1 (123) 456-7890">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <button type="button" class="btn btn-outline" id="cancelLost">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- REPORT FOUND SECTION -->
+                    <section id="report-found" class="content-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    Report Found Item
+                                </h3>
+                                <p class="text-muted">Help reunite lost items with their owners</p>
+                            </div>
+                            <div class="card-body">
+                                <form id="foundItemForm" class="premium-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Item Name *</label>
+                                            <input type="text" class="form-control" id="foundItemName"
+                                                placeholder="e.g., Laptop, Wallet, ID Card" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Category *</label>
+                                            <select class="form-control" id="foundCategory" required>
+                                                <option value="">Select Category</option>
+                                                <option value="Electronics">Electronics</option>
+                                                <option value="ID Card">ID Card</option>
+                                                <option value="Wallet">Wallet</option>
+                                                <option value="Keys">Keys</option>
+                                                <option value="Books">Books</option>
+                                                <option value="Clothing">Clothing</option>
+                                                <option value="Accessories">Accessories</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Found Location *</label>
+                                            <input type="text" class="form-control" id="foundLocation"
+                                                placeholder="e.g., Library, Cafeteria" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Date Found *</label>
+                                            <input type="date" class="form-control" id="foundDate" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Description *</label>
+                                        <textarea class="form-control" id="foundDescription" rows="4"
+                                            placeholder="Describe the item in detail" required></textarea>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label">Your Email *</label>
+                                            <input type="email" class="form-control" id="foundEmail"
+                                                placeholder="your.email@campus.edu" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Your Phone</label>
+                                            <input type="tel" class="form-control" id="foundPhone"
+                                                placeholder="+1 (123) 456-7890">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <button type="button" class="btn btn-outline" id="cancelFound">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- BROWSE SECTION -->
+                    <section id="browse" class="content-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-search"></i>
+                                    Browse Items
+                                </h3>
+                                <div class="search-bar">
+                                    <i class="fas fa-search search-icon"></i>
+                                    <input type="text" class="search-input" id="searchItems"
+                                        placeholder="Search items by name, location, category...">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="filters">
+                                    <div class="filter-group">
+                                        <button class="filter-btn active" data-filter="all">All</button>
+                                        <button class="filter-btn" data-filter="lost">Lost</button>
+                                        <button class="filter-btn" data-filter="found">Found</button>
+                                        <button class="filter-btn" data-filter="matched">Matched</button>
+                                    </div>
+
+                                    <select class="form-control" id="categoryFilter" style="width: auto;">
+                                        <option value="">All Categories</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="ID Card">ID Card</option>
+                                        <option value="Wallet">Wallet</option>
+                                        <option value="Keys">Keys</option>
+                                        <option value="Books">Books</option>
+                                    </select>
+
+                                    <select class="form-control" id="sortFilter" style="width: auto;">
+                                        <option value="newest">Newest First</option>
+                                        <option value="oldest">Oldest First</option>
+                                        <option value="name">Name A-Z</option>
+                                    </select>
+                                </div>
+
+                                <div class="items-grid" id="itemsContainer">
+                                    <!-- Sample Items -->
+                                    <div class="item-card">
+                                        <div class="item-badge">
+                                            <span class="badge badge-lost">Lost</span>
+                                        </div>
+                                        <div class="item-header">
+                                            <div class="item-category">Electronics</div>
+                                            <h3 class="item-title">MacBook Pro 14"</h3>
+                                        </div>
+                                        <div class="item-body">
+                                            <div class="item-detail">
+                                                <span class="detail-label">Location:</span>
+                                                <span class="detail-value">Library - 2nd Floor</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Date:</span>
+                                                <span class="detail-value">2025-02-20</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Description:</span>
+                                                <span class="detail-value">Space gray, with stickers on lid...</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-footer">
+                                            <span class="badge badge-pending">Pending</span>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-card">
+                                        <div class="item-badge">
+                                            <span class="badge badge-found">Found</span>
+                                        </div>
+                                        <div class="item-header">
+                                            <div class="item-category">ID Card</div>
+                                            <h3 class="item-title">Student ID Card</h3>
+                                        </div>
+                                        <div class="item-body">
+                                            <div class="item-detail">
+                                                <span class="detail-label">Location:</span>
+                                                <span class="detail-value">Cafeteria</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Date:</span>
+                                                <span class="detail-value">2025-02-19</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Description:</span>
+                                                <span class="detail-value">Name: John Smith, Photo attached...</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-footer">
+                                            <span class="badge badge-matched">Matched</span>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-card">
+                                        <div class="item-badge">
+                                            <span class="badge badge-found">Found</span>
+                                        </div>
+                                        <div class="item-header">
+                                            <div class="item-category">Keys</div>
+                                            <h3 class="item-title">House Keys</h3>
+                                        </div>
+                                        <div class="item-body">
+                                            <div class="item-detail">
+                                                <span class="detail-label">Location:</span>
+                                                <span class="detail-value">Parking Lot</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Date:</span>
+                                                <span class="detail-value">2025-02-18</span>
+                                            </div>
+                                            <div class="item-detail">
+                                                <span class="detail-label">Description:</span>
+                                                <span class="detail-value">3 keys with blue keychain...</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-footer">
+                                            <span class="badge badge-pending">Pending</span>
+                                            <button class="btn btn-sm btn-outline">
+                                                <i class="fas fa-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MATCHES SECTION -->
+                    <section id="matches" class="content-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-handshake"></i>
+                                    Potential Matches
+                                </h3>
+                                <button class="btn btn-outline btn-sm" id="refreshMatches">
+                                    <i class="fas fa-sync-alt"></i> Refresh
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-container">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Match Score</th>
+                                                <th>Lost Item</th>
+                                                <th>Found Item</th>
+                                                <th>Category</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="matchesContainer">
+                                            <tr>
+                                                <td><span class="badge badge-matched">98%</span></td>
+                                                <td>MacBook Pro</td>
+                                                <td>MacBook Pro 14"</td>
+                                                <td>Electronics</td>
+                                                <td>2025-02-20</td>
+                                                <td><span class="badge badge-pending">Pending</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge badge-matched">95%</span></td>
+                                                <td>Student ID Card</td>
+                                                <td>ID Card - John Smith</td>
+                                                <td>ID Card</td>
+                                                <td>2025-02-19</td>
+                                                <td><span class="badge badge-matched">Notified</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HISTORY SECTION -->
+                    <section id="history" class="content-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    <i class="fas fa-history"></i>
+                                    History
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-container">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Item</th>
+                                                <th>Location</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Completed Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="historyContainer">
+                                            <tr>
+                                                <td><span class="badge badge-lost">Lost</span></td>
+                                                <td>iPhone 13</td>
+                                                <td>Gym</td>
+                                                <td>2025-02-15</td>
+                                                <td><span class="badge badge-resolved">Resolved</span></td>
+                                                <td>2025-02-17</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge badge-found">Found</span></td>
+                                                <td>Wallet</td>
+                                                <td>Library</td>
+                                                <td>2025-02-14</td>
+                                                <td><span class="badge badge-completed">Completed</span></td>
+                                                <td>2025-02-16</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ANALYTICS SECTION - REAL-TIME ADVANCED ANALYTICS WITH IMAGES -->
+                    <section id="analytics" class="content-section">
+                        <!-- Analytics Header with Date Range & Controls -->
+                        <div class="analytics-header">
+                            <div class="analytics-title">
+                                <h2>
+                                    <i class="fas fa-chart-line"></i>
+                                    Analytics Dashboard
+                                </h2>
+                                <span class="live-badge">
+                                    <span class="pulse-dot"></span>
+                                    LIVE
+                                </span>
+                            </div>
+
+                            <div class="analytics-controls">
+                                <!-- Date Range Selector -->
+                                <div class="date-range-selector">
+                                    <button class="range-btn active" data-range="today">Today</button>
+                                    <button class="range-btn" data-range="week">This Week</button>
+                                    <button class="range-btn" data-range="month">This Month</button>
+                                    <button class="range-btn" data-range="quarter">Quarter</button>
+                                    <button class="range-btn" data-range="year">Year</button>
+                                    <div class="custom-range">
+                                        <input type="date" id="startDate" class="date-input">
+                                        <span>to</span>
+                                        <input type="date" id="endDate" class="date-input">
+                                        <button class="apply-btn">Apply</button>
+                                    </div>
+                                </div>
+
+                                <!-- Export Options -->
+                                <div class="export-options">
+                                    <button class="export-btn" onclick="exportAnalytics('pdf')">
+                                        <i class="fas fa-file-pdf"></i>
+                                        PDF
+                                    </button>
+                                    <button class="export-btn" onclick="exportAnalytics('csv')">
+                                        <i class="fas fa-file-csv"></i>
+                                        CSV
+                                    </button>
+                                    <button class="export-btn" onclick="exportAnalytics('image')">
+                                        <i class="fas fa-camera"></i>
+                                        Screenshot
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- KPI Cards with Real Data -->
+                        <div class="analytics-kpi-grid">
+                            <div class="kpi-card">
+                                <div class="kpi-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Total Items Processed</div>
+                                    <div class="kpi-value" id="totalItemsProcessed">1,247</div>
+                                    <div class="kpi-trend positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+12.5% vs last period</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-card">
+                                <div class="kpi-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Resolution Rate</div>
+                                    <div class="kpi-value" id="resolutionRate">78.3%</div>
+                                    <div class="kpi-trend positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+5.2% vs last period</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-card">
+                                <div class="kpi-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Avg. Resolution Time</div>
+                                    <div class="kpi-value" id="avgResolutionTime">2.4 days</div>
+                                    <div class="kpi-trend negative">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>-0.3 days vs last period</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-card">
+                                <div class="kpi-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Match Success Rate</div>
+                                    <div class="kpi-value" id="matchSuccessRate">92.1%</div>
+                                    <div class="kpi-trend positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+3.8% vs last period</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Charts Grid -->
+                        <div class="charts-grid">
+                            <!-- Category Distribution with Real Data and Images -->
+                            <div class="chart-card enhanced-card">
+                                <div class="chart-header">
+                                    <div>
+                                        <h3>
+                                            <i class="fas fa-tags"></i>
+                                            Category Distribution
+                                        </h3>
+                                        <p class="chart-subtitle">Lost & Found items by category with visual
+                                            representation</p>
+                                    </div>
+                                    <div class="chart-legend" id="categoryLegend"></div>
+                                </div>
+                                <div class="chart-body split-view">
+                                    <div class="chart-left">
+                                        <canvas id="categoryChart" style="height: 350px; width: 100%;"></canvas>
+                                    </div>
+                                    <div class="chart-right image-grid">
+                                        <div class="category-image-card" data-category="electronics">
+                                            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=200&h=200&fit=crop"
+                                                alt="Electronics">
+                                            <div class="category-stats">
+                                                <span class="category-name">Electronics</span>
+                                                <span class="category-count">23 items</span>
+                                                <span class="category-percent">34%</span>
+                                            </div>
+                                        </div>
+                                        <div class="category-image-card" data-category="idcards">
+                                            <img src="data:image/jpeg;base64,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"
+                                                alt="ID Cards">
+                                            <div class="category-stats">
+                                                <span class="category-name">ID Cards</span>
+                                                <span class="category-count">18 items</span>
+                                                <span class="category-percent">27%</span>
+                                            </div>
+                                        </div>
+                                        <div class="category-image-card" data-category="keys">
+                                            <img src="https://printingo.in/wp-content/uploads/2021/03/Identity-Card-Material-PVC-Like-ATM-Card-3.jpg"
+                                                alt="Keys">
+                                            <div class="category-stats">
+                                                <span class="category-name">Keys</span>
+                                                <span class="category-count">15 items</span>
+                                                <span class="category-percent">22%</span>
+                                            </div>
+                                        </div>
+                                        <div class="category-image-card" data-category="wallets">
+                                            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=200&h=200&fit=crop"
+                                                alt="Wallets">
+                                            <div class="category-stats">
+                                                <span class="category-name">Wallets</span>
+                                                <span class="category-count">14 items</span>
+                                                <span class="category-percent">20%</span>
+                                            </div>
+                                        </div>
+                                        <div class="category-image-card" data-category="books">
+                                            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=200&h=200&fit=crop"
+                                                alt="Books">
+                                            <div class="category-stats">
+                                                <span class="category-name">Books</span>
+                                                <span class="category-count">9 items</span>
+                                                <span class="category-percent">14%</span>
+                                            </div>
+                                        </div>
+                                        <div class="category-image-card" data-category="clothing">
+                                            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=200&h=200&fit=crop"
+                                                alt="Clothing">
+                                            <div class="category-stats">
+                                                <span class="category-name">Clothing</span>
+                                                <span class="category-count">7 items</span>
+                                                <span class="category-percent">11%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-footer">
+                                    <div class="data-summary">
+                                        <span><strong>Top Category:</strong> Electronics (34%)</span>
+                                        <span><strong>Fastest Growing:</strong> ID Cards (+23%)</span>
+                                    </div>
+                                    <div class="image-gallery-toggle" onclick="toggleCategoryGallery()">
+                                        <i class="fas fa-images"></i> View Gallery
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Location Hotspots with Map Visualization and Images -->
+                            <div class="chart-card enhanced-card">
+                                <div class="chart-header">
+                                    <div>
+                                        <h3>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            Location Hotspots
+                                        </h3>
+                                        <p class="chart-subtitle">Interactive map of lost/found locations</p>
+                                    </div>
+                                    <div class="location-filters">
+                                        <select id="locationTypeFilter" class="chart-filter">
+                                            <option value="all">All Locations</option>
+                                            <option value="library">Library</option>
+                                            <option value="cafeteria">Cafeteria</option>
+                                            <option value="gym">Gym</option>
+                                            <option value="classrooms">Classrooms</option>
+                                            <option value="parking">Parking</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="chart-body split-view">
+                                    <div class="chart-left">
+                                        <canvas id="locationChart" style="height: 350px; width: 100%;"></canvas>
+                                    </div>
+                                    <div class="chart-right location-showcase">
+                                        <div class="location-map-preview">
+                                            <img src="https://content.jdmagicbox.com/v2/comp/nashik/b5/0253px253.x253.131216104112.m3b5/catalogue/karmveer-abasaheb-alias-nm-sonawane-arts-commerce-and-science-college-satana-satana-colleges-qeulddm9pq.jpg"
+                                                alt="Campus Map" class="map-image">
+                                            <div class="map-overlay">
+
+                                            </div>
+                                        </div>
+                                        <div class="location-stats-grid">
+                                            <div class="location-stat-item">
+                                                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=100&h=100&fit=crop"
+                                                    alt="Library">
+                                                <div class="location-info">
+                                                    <strong>Library</strong>
+                                                    <span>156 items</span>
+                                                </div>
+                                            </div>
+                                            <div class="location-stat-item">
+                                                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=100&h=100&fit=crop"
+                                                    alt="Cafeteria">
+                                                <div class="location-info">
+                                                    <strong>Cafeteria</strong>
+                                                    <span>98 items</span>
+                                                </div>
+                                            </div>
+                                            <div class="location-stat-item">
+                                                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=100&h=100&fit=crop"
+                                                    alt="Gym">
+                                                <div class="location-info">
+                                                    <strong>Gym</strong>
+                                                    <span>67 items</span>
+                                                </div>
+                                            </div>
+                                            <div class="location-stat-item">
+                                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop"
+                                                    alt="Classrooms">
+                                                <div class="location-info">
+                                                    <strong>Classrooms</strong>
+                                                    <span>143 items</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-footer">
+                                    <div class="hotspot-list">
+                                        <span class="hotspot-item"><span class="hotspot-dot"
+                                                style="background: #ef4444;"></span> Library: 156 items (Hotspot
+                                            🔥)</span>
+                                        <span class="hotspot-item"><span class="hotspot-dot"
+                                                style="background: #f59e0b;"></span> Cafeteria: 98 items</span>
+                                        <span class="hotspot-item"><span class="hotspot-dot"
+                                                style="background: #10b981;"></span> Gym: 67 items</span>
+                                        <span class="hotspot-item"><span class="hotspot-dot"
+                                                style="background: #3b82f6;"></span> Classrooms: 143 items</span>
+                                    </div>
+                                    <button class="view-map-btn" onclick="openFullMap()">
+                                        <i class="fas fa-expand"></i> View Full Map
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Monthly Reports with Trend Analysis -->
+                            <div class="chart-card full-width">
+                                <div class="chart-header">
+                                    <div>
+                                        <h3>
+                                            <i class="fas fa-chart-line"></i>
+                                            Monthly Reports Trend
+                                        </h3>
+                                        <p class="chart-subtitle">Lost vs Found items over time</p>
+                                    </div>
+                                    <div class="trend-indicators">
+                                        <span class="trend-up">
+                                            <i class="fas fa-arrow-up"></i> +15.3% YoY
+                                        </span>
+                                        <span class="trend-down">
+                                            <i class="fas fa-arrow-down"></i> -2.1% MoM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="chart-body">
+                                    <canvas id="monthlyChart" style="height: 400px; width: 100%;"></canvas>
+                                </div>
+                                <div class="chart-footer">
+                                    <div class="insights">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Peak activity during exam weeks (Dec & May)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resolution Rate with Advanced Metrics -->
+                            <div class="chart-card">
+                                <div class="chart-header">
+                                    <div>
+                                        <h3>
+                                            <i class="fas fa-percent"></i>
+                                            Resolution Rate by Category
+                                        </h3>
+                                        <p class="chart-subtitle">Success rate across different item types</p>
+                                    </div>
+                                </div>
+                                <div class="chart-body">
+                                    <canvas id="resolutionChart" style="height: 350px; width: 100%;"></canvas>
+                                </div>
+                                <div class="chart-footer">
+                                    <div class="resolution-stats">
+                                        <span><strong>Best:</strong> ID Cards (94%)</span>
+                                        <span><strong>Needs Improvement:</strong> Keys (62%)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Analysis Chart -->
+                            <div class="chart-card">
+                                <div class="chart-header">
+                                    <div>
+                                        <h3>
+                                            <i class="fas fa-clock"></i>
+                                            Peak Hours Analysis
+                                        </h3>
+                                        <p class="chart-subtitle">When items are most commonly lost/found</p>
+                                    </div>
+                                </div>
+                                <div class="chart-body">
+                                    <canvas id="peakHoursChart" style="height: 350px; width: 100%;"></canvas>
+                                </div>
+                                <div class="chart-footer">
+                                    <span class="peak-time">Peak: 12:00 PM - 2:00 PM (Lunch hour)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Advanced Analytics Grid -->
+                        <div class="advanced-analytics-grid">
+                            <!-- Predictive Analytics -->
+                            <div class="analytics-card">
+                                <div class="card-header">
+                                    <h4>
+                                        <i class="fas fa-robot"></i>
+                                        AI Predictions
+                                    </h4>
+                                    <span class="badge badge-success">ML Model Active</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="prediction-item">
+                                        <div class="prediction-label">Expected items next week</div>
+                                        <div class="prediction-value">234 <span class="trend">±12</span></div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 78%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prediction-item">
+                                        <div class="prediction-label">Peak season forecast</div>
+                                        <div class="prediction-value">May 15 - June 10</div>
+                                        <div class="prediction-confidence">Confidence: 92%</div>
+                                    </div>
+                                    <div class="prediction-item">
+                                        <div class="prediction-label">Most likely lost items</div>
+                                        <div class="prediction-tags">
+                                            <span class="tag">ID Cards</span>
+                                            <span class="tag">Laptops</span>
+                                            <span class="tag">Keys</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="analytics-card">
+                                <div class="card-header">
+                                    <h4>
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        Performance Metrics
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="metric">
+                                        <div class="metric-label">System Efficiency</div>
+                                        <div class="metric-value">94%</div>
+                                        <div class="metric-bar">
+                                            <div class="metric-progress" style="width: 94%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">User Satisfaction</div>
+                                        <div class="metric-value">4.8/5.0</div>
+                                        <div class="metric-bar">
+                                            <div class="metric-progress" style="width: 96%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Match Accuracy</div>
+                                        <div class="metric-value">97%</div>
+                                        <div class="metric-bar">
+                                            <div class="metric-progress" style="width: 97%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activity Feed -->
+                            <div class="analytics-card">
+                                <div class="card-header">
+                                    <h4>
+                                        <i class="fas fa-history"></i>
+                                        Recent Analytics Events
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="activity-feed">
+                                        <div class="feed-item">
+                                            <span class="feed-time">2 min ago</span>
+                                            <span class="feed-text">New match detected in Library</span>
+                                        </div>
+                                        <div class="feed-item">
+                                            <span class="feed-time">15 min ago</span>
+                                            <span class="feed-text">Resolution rate increased by 2.3%</span>
+                                        </div>
+                                        <div class="feed-item">
+                                            <span class="feed-time">1 hour ago</span>
+                                            <span class="feed-text">Peak hour analysis updated</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- SETTINGS SECTION - ADVANCED USER PREFERENCES -->
+<section id="settings" class="content-section">
+    <!-- Settings Header -->
+    <div class="settings-header">
+        <div class="settings-title">
+            <h2>
+                <i class="fas fa-cog"></i>
+                Settings & Preferences
+            </h2>
+            <p class="text-muted">Customize your CampusConnect experience</p>
+        </div>
+        <div class="settings-actions">
+            <button class="btn btn-outline" onclick="resetSettings()">
+                <i class="fas fa-undo"></i> Reset to Default
+            </button>
+        </div>
+    </div>
+
+    <!-- Settings Grid -->
+    <div class="settings-grid">
+        <!-- Profile Settings -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Profile Information</h3>
+                    <p class="text-muted">Manage your personal information</p>
+                </div>
+                <span class="status-badge completed">Completed</span>
+            </div>
+            <div class="card-body">
+                <form id="profileSettingsForm" class="settings-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Display Name</label>
+                            <input type="text" class="form-control" id="displayName" value="madhuri shewale" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" value="madhu.shewale@campus.edu" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" value="+1 (555) 123-4567" placeholder="Enter your phone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Department</label>
+                            <select class="form-control" id="department">
+                                <option value="cs" selected>Computer Science</option>
+                                <option value="eng">Engineering</option>
+                                <option value="bus">Business</option>
+                                <option value="arts">Arts & Sciences</option>
+                                <option value="med">Medicine</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Profile Picture</label>
+                        <div class="profile-picture-upload">
+                            <div class="current-picture">
+                                <img src="https://ui-avatars.com/api/?name=madhuri+shewale&background=4f46e5&color=fff&size=128" alt="Profile">
+                            </div>
+                            <div class="upload-actions">
+                                <button type="button" class="btn btn-outline btn-sm" onclick="uploadProfilePicture()">
+                                    <i class="fas fa-upload"></i> Upload New
+                                </button>
+                                <button type="button" class="btn btn-outline btn-sm" onclick="removeProfilePicture()">
+                                    <i class="fas fa-trash"></i> Remove
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Notification Preferences</h3>
+                    <p class="text-muted">Choose how you want to be notified</p>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="notificationsMaster" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <div class="card-body">
+                <div class="notification-settings">
+                    <!-- Email Notifications -->
+                    <div class="notification-item">
+                        <div class="notification-info">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Notifications</h4>
+                                <p class="text-muted">Receive updates via email</p>
+                            </div>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="emailNotifications" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <!-- SMS Notifications -->
+                    <div class="notification-item">
+                        <div class="notification-info">
+                            <i class="fas fa-sms"></i>
+                            <div>
+                                <h4>SMS Notifications</h4>
+                                <p class="text-muted">Get text messages for urgent alerts</p>
+                            </div>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="smsNotifications" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <!-- Push Notifications -->
+                    <div class="notification-item">
+                        <div class="notification-info">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Push Notifications</h4>
+                                <p class="text-muted">Browser and mobile push alerts</p>
+                            </div>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="pushNotifications" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <!-- Notification Types -->
+                    <div class="notification-types">
+                        <h4>Notify me about:</h4>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="notifyMatches" checked>
+                                <span class="checkbox-custom"></span>
+                                New matches found
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="notifyMessages" checked>
+                                <span class="checkbox-custom"></span>
+                                Messages from finders
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="notifyUpdates" checked>
+                                <span class="checkbox-custom"></span>
+                                Status updates
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="notifyPromotions">
+                                <span class="checkbox-custom"></span>
+                                Promotions & tips
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy & Security -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Privacy & Security</h3>
+                    <p class="text-muted">Control your data and privacy</p>
+                </div>
+                <span class="status-badge warning">2FA Off</span>
+            </div>
+            <div class="card-body">
+                <!-- Privacy Settings -->
+                <div class="privacy-section">
+                    <h4>Privacy Settings</h4>
+                    <div class="toggle-item">
+                        <div class="toggle-info">
+                            <strong>Profile Visibility</strong>
+                            <span class="text-muted">Make your profile visible to others</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="shareProfile">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-item">
+                        <div class="toggle-info">
+                            <strong>Show Contact to Matches</strong>
+                            <span class="text-muted">Share contact info when matched</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="showContact" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-item">
+                        <div class="toggle-info">
+                            <strong>Activity Status</strong>
+                            <span class="text-muted">Show when you're online</span>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="showActivity" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Security Settings -->
+                <div class="security-section">
+                    <h4>Security</h4>
+                    
+                    <!-- Two-Factor Authentication -->
+                    <div class="security-item">
+                        <div class="security-info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <strong>Two-Factor Authentication</strong>
+                                <p class="text-muted">Add an extra layer of security</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-sm" onclick="setup2FA()">
+                            Enable 2FA
+                        </button>
+                    </div>
+
+                    <!-- Change Password -->
+                    <div class="security-item">
+                        <div class="security-info">
+                            <i class="fas fa-key"></i>
+                            <div>
+                                <strong>Password</strong>
+                                <p class="text-muted">Last changed 30 days ago</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-sm" onclick="changePassword()">
+                            Change
+                        </button>
+                    </div>
+
+                    <!-- Login Sessions -->
+                    <div class="security-item">
+                        <div class="security-info">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <strong>Active Sessions</strong>
+                                <p class="text-muted">2 devices currently active</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-sm" onclick="manageSessions()">
+                            Manage
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appearance Settings -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Appearance</h3>
+                    <p class="text-muted">Customize the look and feel</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Theme Selection -->
+                <div class="theme-section">
+                    <h4>Theme Mode</h4>
+                    <div class="theme-options">
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="light" checked>
+                            <span class="theme-preview light-mode">
+                                <i class="fas fa-sun"></i>
+                                <span>Light</span>
+                            </span>
+                        </label>
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="dark">
+                            <span class="theme-preview dark-mode">
+                                <i class="fas fa-moon"></i>
+                                <span>Dark</span>
+                            </span>
+                        </label>
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="system">
+                            <span class="theme-preview system-mode">
+                                <i class="fas fa-laptop"></i>
+                                <span>System</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Color Accent -->
+                <div class="color-section">
+                    <h4>Accent Color</h4>
+                    <div class="color-options">
+                        <button class="color-option" style="background: #6366f1" onclick="setAccentColor('#6366f1')"></button>
+                        <button class="color-option" style="background: #10b981" onclick="setAccentColor('#10b981')"></button>
+                        <button class="color-option" style="background: #f59e0b" onclick="setAccentColor('#f59e0b')"></button>
+                        <button class="color-option" style="background: #ef4444" onclick="setAccentColor('#ef4444')"></button>
+                        <button class="color-option" style="background: #8b5cf6" onclick="setAccentColor('#8b5cf6')"></button>
+                        <button class="color-option" style="background: #ec4899" onclick="setAccentColor('#ec4899')"></button>
+                    </div>
+                </div>
+
+                <!-- Font Size -->
+                <div class="font-section">
+                    <h4>Font Size</h4>
+                    <div class="font-size-control">
+                        <button class="size-btn" onclick="adjustFontSize('decrease')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <span class="current-size" id="currentFontSize">Medium</span>
+                        <button class="size-btn" onclick="adjustFontSize('increase')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Language & Region -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Language & Region</h3>
+                    <p class="text-muted">Set your preferences</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label class="form-label">Language</label>
+                    <select class="form-control" id="language">
+                        <option value="en" selected>English (US)</option>
+                        <option value="en-gb">English (UK)</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Time Zone</label>
+                    <select class="form-control" id="timezone">
+                        <option value="est" selected>Eastern Time (EST)</option>
+                        <option value="cst">Central Time (CST)</option>
+                        <option value="mst">Mountain Time (MST)</option>
+                        <option value="pst">Pacific Time (PST)</option>
+                        <option value="gmt">Greenwich Mean Time (GMT)</option>
+                        <option value="cet">Central European Time (CET)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Date Format</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="dateFormat" value="mdy" checked>
+                            <span class="radio-custom"></span>
+                            MM/DD/YYYY
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="dateFormat" value="dmy">
+                            <span class="radio-custom"></span>
+                            DD/MM/YYYY
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="dateFormat" value="ymd">
+                            <span class="radio-custom"></span>
+                            YYYY/MM/DD
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data & Storage -->
+        <div class="settings-card">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Data & Storage</h3>
+                    <p class="text-muted">Manage your data</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Storage Usage -->
+                <div class="storage-usage">
+                    <div class="storage-header">
+                        <span>Storage Used</span>
+                        <span class="storage-percentage">65%</span>
+                    </div>
+                    <div class="storage-bar">
+                        <div class="storage-progress" style="width: 65%"></div>
+                    </div>
+                    <div class="storage-details">
+                        <span>1.2 GB of 2 GB used</span>
+                        <span class="storage-warning">85 days remaining</span>
+                    </div>
+                </div>
+
+                <!-- Data Options -->
+                <div class="data-options">
+                    <button class="data-option" onclick="exportData()">
+                        <i class="fas fa-download"></i>
+                        <div>
+                            <strong>Export Data</strong>
+                            <span class="text-muted">Download your data</span>
+                        </div>
+                    </button>
+
+                    <button class="data-option" onclick="clearCache()">
+                        <i class="fas fa-broom"></i>
+                        <div>
+                            <strong>Clear Cache</strong>
+                            <span class="text-muted">Free up space</span>
+                        </div>
+                    </button>
+
+                    <button class="data-option danger" onclick="deleteAccount()">
+                        <i class="fas fa-trash-alt"></i>
+                        <div>
+                            <strong>Delete Account</strong>
+                            <span class="text-muted">Permanently remove</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Footer -->
+    <div class="settings-footer">
+        <div class="footer-message">
+            <i class="fas fa-info-circle"></i>
+            <span>Changes are saved automatically</span>
+        </div>
+        <div class="footer-actions">
+            <button class="btn btn-outline" onclick="discardChanges()">
+                <i class="fas fa-times"></i> Discard
+            </button>
+            <button class="btn btn-primary" onclick="saveSettings()">
+                <i class="fas fa-save"></i> Save Changes
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- HELP SECTION - COMPREHENSIVE SUPPORT CENTER -->
+<section id="help" class="content-section">
+    <!-- Help Header -->
+    <div class="help-header">
+        <div class="help-title">
+            <h2>
+                <i class="fas fa-question-circle"></i>
+                Help & Support Center
+            </h2>
+            <p class="text-muted">We're here to help you 24/7</p>
+        </div>
+        <div class="help-search">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for help articles..." id="helpSearch">
+                <span class="search-hint">Press / to search</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Support Cards -->
+    <div class="quick-support-grid">
+        <div class="support-card emergency">
+            <div class="card-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="card-content">
+                <h3>Emergency Support</h3>
+                <p>Immediate assistance for urgent issues</p>
+                <div class="emergency-contacts">
+                    <a href="tel:+18005551234" class="emergency-contact">
+                        <i class="fas fa-phone-alt"></i> 1-800-555-1234
+                    </a>
+                    <span class="contact-divider">|</span>
+                    <a href="#" class="emergency-contact" onclick="startLiveChat()">
+                        <i class="fas fa-comment"></i> Live Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Categories Grid -->
+    <div class="help-categories-grid">
+        <!-- FAQs Card -->
+        <div class="help-card">
+            <div class="help-card-header">
+                <div class="header-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Frequently Asked Questions</h3>
+                <p class="text-muted">Find quick answers to common questions</p>
+            </div>
+            <div class="help-card-body">
+                <div class="faq-list">
+                    <div class="faq-item" onclick="toggleFAQ(this)">
+                        <div class="faq-question">
+                            <span>How do I report a lost item?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Go to the "Report Lost Item" section from the sidebar, fill in the details about your item including description, location, and date. Submit the form and we'll start looking for matches immediately.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFAQ(this)">
+                        <div class="faq-question">
+                            <span>How does the matching system work?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Our AI-powered system automatically compares lost and found items based on category, description, keywords, and location. When a potential match is found, both parties are notified immediately.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFAQ(this)">
+                        <div class="faq-question">
+                            <span>What should I do when I find an item?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Report it immediately using the "Report Found Item" form. Include clear photos and detailed description. Keep the item safe until the owner is identified and contact is established.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFAQ(this)">
+                        <div class="faq-question">
+                            <span>How long does it take to find a match?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Average match time is 2.4 days. Some items match within hours, while others may take longer depending on how detailed the description is and how many similar items are reported.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFAQ(this)">
+                        <div class="faq-question">
+                            <span>Is my personal information safe?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! We use 256-bit encryption and never share your personal information. Contact details are only shared when a match is confirmed and both parties agree to connect.
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-all-link">View all FAQs <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Contact Support Card -->
+        <div class="help-card">
+            <div class="help-card-header">
+                <div class="header-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Contact Support</h3>
+                <p class="text-muted">Get in touch with our support team</p>
+            </div>
+            <div class="help-card-body">
+                <div class="contact-options">
+                    <div class="contact-option" onclick="startLiveChat()">
+                        <div class="option-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Live Chat</h4>
+                            <p class="text-muted">Chat with support instantly</p>
+                            <span class="availability online">
+                                <span class="dot"></span> Online now
+                            </span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="contact-option" onclick="sendEmail()">
+                        <div class="option-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Email Support</h4>
+                            <p class="text-muted">support@campusconnect.com</p>
+                            <span class="response-time">Response within 2 hours</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="contact-option" onclick="callSupport()">
+                        <div class="option-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Phone Support</h4>
+                            <p class="text-muted">1-800-555-CONNECT</p>
+                            <span class="availability">Available 24/7</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="contact-option" onclick="scheduleCall()">
+                        <div class="option-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Schedule a Call</h4>
+                            <p class="text-muted">Book a time that works for you</p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentation Card -->
+        <div class="help-card">
+            <div class="help-card-header">
+                <div class="header-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Documentation</h3>
+                <p class="text-muted">Comprehensive guides and references</p>
+            </div>
+            <div class="help-card-body">
+                <div class="doc-list">
+                    <a href="#" class="doc-item">
+                        <i class="fas fa-file-pdf"></i>
+                        <div class="doc-info">
+                            <strong>User Guide</strong>
+                            <span class="text-muted">Complete system guide</span>
+                        </div>
+                        <span class="doc-size">2.4 MB</span>
+                    </a>
+
+                    <a href="#" class="doc-item">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="doc-info">
+                            <strong>Quick Start Guide</strong>
+                            <span class="text-muted">Get started in 5 minutes</span>
+                        </div>
+                        <span class="doc-size">1.1 MB</span>
+                    </a>
+
+                    <a href="#" class="doc-item">
+                        <i class="fas fa-file-video"></i>
+                        <div class="doc-info">
+                            <strong>Video Tutorials</strong>
+                            <span class="text-muted">Watch and learn</span>
+                        </div>
+                        <span class="doc-size">12 videos</span>
+                    </a>
+
+                    <a href="#" class="doc-item">
+                        <i class="fas fa-code"></i>
+                        <div class="doc-info">
+                            <strong>API Documentation</strong>
+                            <span class="text-muted">For developers</span>
+                        </div>
+                        <span class="doc-size">Online</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community & Support Card -->
+        <div class="help-card">
+            <div class="help-card-header">
+                <div class="header-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community</h3>
+                <p class="text-muted">Connect with other users</p>
+            </div>
+            <div class="help-card-body">
+                <div class="community-options">
+                    <div class="community-stats">
+                        <div class="stat">
+                            <span class="stat-value">15k+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2.4k</span>
+                            <span class="stat-label">Discussions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+
+                    <div class="community-links">
+                        <a href="#" class="community-link">
+                            <i class="fab fa-discord"></i>
+                            <span>Join Discord</span>
+                        </a>
+                        <a href="#" class="community-link">
+                            <i class="fab fa-slack"></i>
+                            <span>Slack Community</span>
+                        </a>
+                        <a href="#" class="community-link">
+                            <i class="fab fa-reddit"></i>
+                            <span>Reddit Forum</span>
+                        </a>
+                        <a href="#" class="community-link">
+                            <i class="fab fa-stack-overflow"></i>
+                            <span>Stack Overflow</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Hours -->
+    <div class="support-hours">
+        <div class="hours-card">
+            <i class="fas fa-clock"></i>
+            <div class="hours-info">
+                <h4>Support Hours</h4>
+                <p>Monday - Friday: 24/7 | Saturday - Sunday: 8 AM - 8 PM EST</p>
+            </div>
+            <span class="live-badge">
+                <span class="pulse-dot"></span> Live Support Online
+            </span>
+        </div>
+    </div>
+
+    <!-- Still Need Help -->
+    <div class="still-need-help">
+        <h3>Still need help?</h3>
+        <p>Our support team is always ready to assist you</p>
+        <div class="help-actions">
+            <button class="btn btn-primary" onclick="startLiveChat()">
+                <i class="fas fa-comment"></i> Start Live Chat
+            </button>
+            <button class="btn btn-outline" onclick="scheduleCall()">
+                <i class="fas fa-phone"></i> Schedule a Call
+            </button>
+            <button class="btn btn-outline" onclick="sendEmail()">
+                <i class="fas fa-envelope"></i> Send Email
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- MATCH POPUP -->
+    <div id="matchPopup" class="match-popup">
+        <div class="match-popup-content">
+            <button class="match-popup-close" id="closeMatchPopup">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="match-popup-header">
+                <div class="match-icon-wrapper">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h2>Match Found!</h2>
+                <p>Your lost item has been found</p>
+            </div>
+
+            <div class="match-popup-body">
+                <div class="match-side lost">
+                    <div class="side-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Your Lost Item</h3>
+                    </div>
+                    <div class="side-content">
+                        <div class="detail-row">
+                            <span class="detail-label">Item:</span>
+                            <span class="detail-value" id="popupLostItem">MacBook Pro</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value" id="popupLostLocation">Library</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Date:</span>
+                            <span class="detail-value" id="popupLostDate">2025-02-20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="match-side found">
+                    <div class="side-header">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Found Item</h3>
+                    </div>
+                    <div class="side-content">
+                        <div class="detail-row">
+                            <span class="detail-label">Item:</span>
+                            <span class="detail-value" id="popupFoundItem">MacBook Pro 14"</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value" id="popupFoundLocation">Library Entrance</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Date:</span>
+                            <span class="detail-value" id="popupFoundDate">2025-02-21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-actions">
+                <button class="btn btn-primary" id="claimItemBtn">
+                    <i class="fas fa-check"></i> Claim Item
+                </button>
+                <button class="btn btn-outline" id="viewMatchDetailsBtn">
+                    <i class="fas fa-eye"></i> View Details
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE MENU TOGGLE -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- SIDEBAR BACKDROP -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- NOTIFICATION CONTAINER -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        // Utility functions
+        function toggleDemo() {
+            document.getElementById('demoCredentials').classList.toggle('active');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const tooltip = document.createElement('div');
+                tooltip.className = 'copy-tooltip';
+                tooltip.textContent = 'Copied!';
+                document.body.appendChild(tooltip);
+                setTimeout(() => tooltip.remove(), 2000);
+            });
+        }
+
+        function fillDemo(fieldId, value) {
+            document.getElementById(fieldId).value = value;
+            document.getElementById(fieldId).dispatchEvent(new Event('input'));
+        }
+
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Simple app object for demo
+            window.app = {
+                showSection: function (section) {
+                    console.log('Showing section:', section);
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    document.querySelector(`[data-section="${section}"]`)?.classList.add('active');
+                    document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+                    document.getElementById(section)?.classList.add('active');
+                    document.getElementById('currentPageTitle').textContent = section.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                },
+                toggleTheme: function () {
+                    document.body.classList.toggle('dark');
+                },
+                logout: function () {
+                    document.getElementById('mainApp').style.display = 'none';
+                    document.getElementById('loginPage').style.display = 'flex';
+                },
+                refreshDashboard: function () {
+                    console.log('Refreshing dashboard...');
+                },
+                downloadReport: function () {
+                    console.log('Downloading report...');
+                }
+            };
+
+            // Login form handler
+            document.getElementById('loginForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const btn = document.getElementById('loginBtn');
+                btn.classList.add('loading');
+
+                setTimeout(() => {
+                    btn.classList.remove('loading');
+                    btn.classList.add('success');
+
+                    setTimeout(() => {
+                        btn.classList.remove('success');
+                        document.getElementById('loginPage').style.display = 'none';
+                        document.getElementById('mainApp').style.display = 'block';
+                    }, 500);
+                }, 1500);
+            });
+
+            // User menu toggle
+            document.getElementById('userMenuBtn').addEventListener('click', function (e) {
+                e.stopPropagation();
+                document.getElementById('userDropdown').classList.toggle('show');
+            });
+
+            document.addEventListener('click', function () {
+                document.getElementById('userDropdown').classList.remove('show');
+            });
+
+            // Mobile menu toggle
+            document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+                document.getElementById('sidebar').classList.toggle('show');
+                document.getElementById('sidebarBackdrop').classList.toggle('show');
+            });
+
+            document.getElementById('sidebarBackdrop').addEventListener('click', function () {
+                document.getElementById('sidebar').classList.remove('show');
+                this.classList.remove('show');
+            });
+
+            // Theme toggle
+            document.getElementById('lightThemeBtn').addEventListener('click', function () {
+                document.body.classList.remove('dark');
+                document.getElementById('lightThemeBtn').classList.add('active');
+                document.getElementById('darkThemeBtn').classList.remove('active');
+            });
+
+            document.getElementById('darkThemeBtn').addEventListener('click', function () {
+                document.body.classList.add('dark');
+                document.getElementById('darkThemeBtn').classList.add('active');
+                document.getElementById('lightThemeBtn').classList.remove('active');
+            });
+
+            // Logout
+            document.getElementById('logoutBtn').addEventListener('click', function () {
+                document.getElementById('mainApp').style.display = 'none';
+                document.getElementById('loginPage').style.display = 'flex';
+            });
+
+            // Input validation
+            document.querySelectorAll('.form-input').forEach(input => {
+                input.addEventListener('input', function () {
+                    const group = this.closest('.input-group');
+                    if (this.value.length > 0) {
+                        group.classList.add('valid');
+                    } else {
+                        group.classList.remove('valid');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
